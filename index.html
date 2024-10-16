@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <button id="addUserBtn">Add User</button>
+        <ul id="userList"></ul>
+
+        <!-- Edit Modal -->
+        <div id="editModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" id="closeEdit">&times;</span>
+                <h2>Edit User</h2>
+                <form id="editForm">
+                    <label for="editName">Name</label>
+                    <input id="editName" type="text" required>
+
+                    <label for="editEmail">Email</label>
+                    <input id="editEmail" type="email" required>
+
+                    <label for="editImage">Profile Picture</label>
+                    <input type="file" id="editImage">
+
+                    <button type="submit">Update</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Add Modal -->
+        <div id="addModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" id="closeAdd">&times;</span>
+                <h2>Add User</h2>
+                <form id="addForm">
+                    <label for="addName">Name</label>
+                    <input id="addName" type="text" required>
+
+                    <label for="addEmail">Email</label>
+                    <input id="addEmail" type="email" required>
+
+                    <label for="addImage">Profile Picture</label>
+                    <input type="file" id="addImage">
+
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
